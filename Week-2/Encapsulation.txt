@@ -1,0 +1,65 @@
+# Encapsulation:
+    1) Defination :->
+                    - Encapsulation binds data and methods in a class.
+                    - like a capsule it combines and binds together.
+    
+    2) function of Encapsulation :->
+                    - provide secure layer.
+                    - hide internal implementation of code and data in a class.
+                    - Exposes only necessary information to the external world.
+    
+    3) as we are hiding data from outer classes of the world, Encapsulation is also known as data hiding.
+
+    4) - The goal is to implement classes in a way that prevent unauthorised acess to or 
+       modification of the original content of a class by its instances(or object).
+       - The underlying algorithms of one class need to be known to another class.
+       - The 2 classes can still communicate, though.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+# OOPs 4 pillar
+    (1)-> Encapsulation
+    (2)-> Inheritance
+    (3)-> Polymorphism
+    (4)-> Abstraction
+
+---------------------------------------------------------------------------------------------------------------------------
+
+# Acess Modifiers:->
+    1) way to Define acess to the data and methods of a class.
+    
+    2) Public:-
+        a) members declared as public are acessible from any part of the program.
+
+        b) they can be acessed by object of the class and external code.
+
+    3) Private:-
+        a) members declared as Private are acessible only with the same class.
+
+        b) they are not acessible from outside the class, including derived classes.
+
+    4) Protected:-
+        a) members declares as Protected are acessible within the same class and by derived classes.
+
+        b) they are not directly acessible from external code.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+# perfect Encapsulation:->
+    1) if all data members / variable are Private.
+
+    2) handling acess to Encapsulated data.
+        * Despite Encapsulation, external interaction is necessary.
+        * implementation is public methods, such as getters and setters allows external communication.
+        * these methods enable controlled acess to the Encapsulated data.
+
+        -----------------------
+        | Private:            |
+        |   age;              |         person p1;
+        |   name;             |         p1.age; //not acessible
+        |                     |         
+        -----------------------         p1.getname(); //acessible
+        |   getname(){};      |         p1.setname(); //acessible
+        |   setname(){};      |
+        |                     |
+        -----------------------
